@@ -5,6 +5,9 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
+import LikeButton from './components/LikeButton';
+import ClickablePicture from './components/ClickablePicture';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
@@ -86,6 +89,30 @@ function App() {
       <Rating>3</Rating>
       <Rating>4</Rating>
       <Rating>5</Rating>
+
+      <h2>Driver cards</h2>
+
+      <h2>Like buttons</h2>
+
+      <LikeButton />
+
+      <h2>Clickable picture</h2>
+
+      <ClickablePicture
+        img="https://5c6c2a0de07b084ce35373ee--determined-aryabhata-a8a833.netlify.app/img/persons/maxence.png"
+        imgClicked="https://5c6c2a0de07b084ce35373ee--determined-aryabhata-a8a833.netlify.app/img/persons/maxence-glasses.png"
+      />
+
+      <h2>Carousel</h2>
+
+      <Carousel
+        images={[
+          'https://randomuser.me/api/portraits/women/1.jpg',
+          'https://randomuser.me/api/portraits/men/1.jpg',
+          'https://randomuser.me/api/portraits/women/2.jpg',
+          'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
     </div>
   );
 }

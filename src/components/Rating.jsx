@@ -19,6 +19,7 @@ const Rating = (props) => {
     "★ ★ ★ ★ ★"
     ];
     let html = "";
+    
 
     for(let i =0; i < 6; i++) {
        if (Math.floor(props.children) === i) html = stars[i];
