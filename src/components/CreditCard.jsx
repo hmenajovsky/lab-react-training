@@ -6,7 +6,7 @@ const CreditCard = props => {
     color: props.color
   };
   return (
-    <div className="rectangle credit-card" style={divStyle}>
+    <div className="credit-card" style={divStyle}>
       <p>{props.type}</p>
       <p>{props.number}</p>
       <p>

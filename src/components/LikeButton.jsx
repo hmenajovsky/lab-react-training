@@ -15,8 +15,6 @@ const LikeButton = () => {
 
     const handleClick = () => {
         setLikes((prevLikes) => prevLikes + 1)
-        //currentColor = colors[Math.floor(Math.random()*colors.length)];
-        //no neeed a callback because the color value is not calculated
         setColor(colors[Math.floor(Math.random()*colors.length)]);
     }
 

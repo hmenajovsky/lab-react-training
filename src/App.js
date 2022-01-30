@@ -5,9 +5,14 @@ import Random from './components/Random';
 import BoxColor from './components/BoxColor';
 import CreditCard from './components/CreditCard';
 import Rating from './components/Rating';
+import DriverCard from './components/DriverCard';
 import LikeButton from './components/LikeButton';
 import ClickablePicture from './components/ClickablePicture';
 import Carousel from './components/Carousel';
+import Dice from './components/Dice';
+import NumbersTable from './components/NumbersTable';
+import maxence from './assets/images/maxence.png';
+import glasses from './assets/images/maxence-glasses.png';
 
 function App() {
   return (
@@ -92,16 +97,37 @@ function App() {
 
       <h2>Driver cards</h2>
 
+      <DriverCard
+        name="Travis Kalanick"
+        img="https://si.wsj.net/public/resources/images/BN-TY647_37gql_OR_20170621052140.jpg?width=620&height=428"
+        rating={4.2}
+        car={{
+          model: 'Toyota Corolla Altis',
+          licensePlate: 'CO42DE'
+        }}
+      />
+
+      <DriverCard
+        name="Dara Khosrowshahi"
+        rating={4.9}
+        img="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/09/Dara_ELT_Newsroom_1000px.jpg"
+        car={{
+          model: 'Audi A3',
+          licensePlate: 'BE33ER'
+        }}
+      />
+
       <h2>Like buttons</h2>
 
       <LikeButton />
 
       <h2>Clickable picture</h2>
 
-      <ClickablePicture
-        img="https://5c6c2a0de07b084ce35373ee--determined-aryabhata-a8a833.netlify.app/img/persons/maxence.png"
-        imgClicked="https://5c6c2a0de07b084ce35373ee--determined-aryabhata-a8a833.netlify.app/img/persons/maxence-glasses.png"
-      />
+      <ClickablePicture img={maxence} imgClicked={glasses} />
+
+      <h2>Dice</h2>
+
+      <Dice />
 
       <h2>Carousel</h2>
 
@@ -113,6 +139,10 @@ function App() {
           'https://randomuser.me/api/portraits/men/2.jpg'
         ]}
       />
+
+      <h2>Numbers table</h2>
+
+      <NumbersTable limit={12} />
     </div>
   );
 }

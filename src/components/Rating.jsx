@@ -1,14 +1,6 @@
 import React from 'react'
 
 const Rating = (props) => {
-    /*const stars = {
-        none : "☆; ☆; ☆; ☆; ☆;",
-        one: "★ ☆; ☆; ☆; ☆; ",
-        two: "★ ★ ☆; ☆; ☆; ",
-        three: "★ ★ ★ ☆; ☆; ",
-        four: "★ ★ ★ ★ ☆;",
-        five: "★ ★ ★ ★ ★"
-    };*/
 
     const stars = [
     "☆ ☆ ☆ ☆ ☆",
